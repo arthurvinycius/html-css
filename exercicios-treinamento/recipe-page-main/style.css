@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+
+--White: hsl(0, 0%, 100%);
+
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+
+--Brown-800: hsl(14, 45%, 36%);
+
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+
+}
+
+body{
+    background-color: var(--Stone-100);
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+    margin: 100px 0 100px 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+     
+    
+    
+   
+}
+
+.main{
+    background-color: var(--White);
+    border-radius: 12px;
+    padding: 20px;
+    width: 500px;
+    
+
+    
+    
+}
+img{
+    width: 460px;
+    border-radius: 12px;
+  
+}
+h1{
+    font-family: "Young Serif", serif;
+    line-height: 2.3em;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 25px;
+}
+.prepado{
+    background-color: var(--Rose-50);
+    margin: 23px 0 23px 0;
+    border-radius: 12px;
+    padding: 25px;
+    list-style-position: inside;
+    line-height: 2em;
+}
+p{
+    line-height: 2em;
+}
+span{
+    font-weight: bold;
+}
+h2{
+   
+    font-family: "Young Serif", serif;
+    color: var(--Brown-800);
+    line-height: 2.3em;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+
+ol {
+  list-style-position: outside; /* números ficam fora */
+  padding-left: 1.5em;          /* espaço pro alinhamento */
+}
+
+li {
+  margin-bottom: 2em;           /* espaço entre itens */
+}
+ol li::marker {
+  color: var(--Brown-800); /* Exemplo: cor marrom avermelhada */
+  font-weight: bold;
+}
+ul li::marker {
+    color: var(--Brown-800);
+}
+table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1em;
+    }
+
+    td {
+      padding: 12px 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    td:first-child {
+      text-align: left;
+    }
+
+    td:last-child {
+      text-align: right;
+      font-weight: bold;
+      color: #5a2e1f;
+    }
+    hr {
+  border: 1px solid hsl(30, 18%, 87%); /* linha fina marrom */
+}
+    

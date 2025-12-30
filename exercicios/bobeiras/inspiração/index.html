@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Sabor da Casa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #d35400;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #e67e22;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .about, .menu, .gallery, .contact {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: #d35400;
+      border-bottom: 2px solid #d35400;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .menu-item {
+      margin-bottom: 15px;
+    }
+
+    .menu-item h3 {
+      margin: 0;
+      color: #e67e22;
+    }
+
+    .gallery img {
+      width: 30%;
+      margin: 1.5%;
+      border-radius: 10px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .contact button {
+      background-color: #d35400;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .contact button:hover {
+      background-color: #e67e22;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #d35400;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Restaurante Sabor da Casa</h1>
+    <p>Sabores que confortam, como feitos em casa</p>
+  </header>
+
+  <nav>
+    <a href="#about">Sobre</a>
+    <a href="#menu">Cardápio</a>
+    <a href="#gallery">Galeria</a>
+    <a href="#contact">Contato</a>
+  </nav>
+
+  <div class="container">
+    <section id="about" class="about">
+      <h2>Sobre Nós</h2>
+      <p>O Restaurante Sabor da Casa nasceu do desejo de oferecer refeições saborosas com aquele gostinho de comida feita com carinho. Utilizamos ingredientes frescos e selecionados, com receitas que passam de geração em geração.</p>
+    </section>
+
+    <section id="menu" class="menu">
+      <h2>Cardápio</h2>
+      <div class="menu-item">
+        <h3>Feijoada Completa</h3>
+        <p>Feijão preto, carnes selecionadas, arroz, farofa e couve refogada.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Filé à Parmegiana</h3>
+        <p>Filé empanado com molho de tomate, queijo gratinado e batatas fritas.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Moqueca Baiana</h3>
+        <p>Peixe cozido com leite de coco, dendê, pimentões e coentro.</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2>Galeria</h2>
+      <img src="https://via.placeholder.com/300x200" alt="Prato 1">
+      <img src="https://via.placeholder.com/300x200" alt="Prato 2">
+      <img src="https://via.placeholder.com/300x200" alt="Ambiente">
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contato</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Restaurante Sabor da Casa. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

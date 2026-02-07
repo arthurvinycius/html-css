@@ -14,7 +14,19 @@
         text-shadow: none;
         color: black;
     }
-
+    body::after{
+        content: 'Arquivo para impressora...';
+        position: fixed;
+        bottom: 0;
+        color: black;
+        
+    }
+    
+    img#phone {Display: none}
+    img#tablet {Display: none}
+    img#print {Display: block}
+    img#pc {Display: none}
+    img#tv {Display: none}
 
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -53,4 +65,7 @@
     img#tv {Display: block}
 
 
+}
+article::after{
+    content: '(Arquivo para impressora)';
 }
